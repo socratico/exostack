@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link href="{% static 'css/materialize.css' %}" rel="stylesheet" type="css/materialize.min./home/rodrigo/Escritorio/duoc/exo/static/imagescss"  media="screen,projection"/>
+      <link href="{% static 'css/carousel.css' %}" type="text/css" href="carousel.css">
+      <!--Let browser know website is optimized for mobile-->
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+	  
+    <!-- Compiled and minified CSS -->
+    <link rel="{% static 'css/style.css' %}" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="estilocarou.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    </head>
+
+    <body>
+	
+	<nav class="nav-wraper">
+	
+	  <div class="container">
+	
+	  <a href="#" class="brand-logo">ExoStacks</a>
+	   <a href="#" data target="menu-responsive" class="sidenav-trigger">
+	     <i class=material-icons>menu</i>
+	       <ul class="right hide-on-med-and-down">
+		
+		     <li><a href="{% url 'index' %}">Inicio</a></li>
+		     <li><a href="{% url 'login' %}">Login</a></li>
+		     <li><a href="{% url 'registro' %}">Registro</a></li>
+		
+		   </ul>
+	  
+	   </a>
+	    
+		
+		
+	
+	  </div>
+	</nav>
+
+
+
+<div class="carousel">
+			<a class="carousel-item" ><img src="{% static 'images/carou1.jpg' %}" style="width:200px;height:200px;"> </a>
+			<a class="carousel-item" ><img src="{% static 'images/carou2.jpg' %}" style="width:200px;height:200px;"> </a>
+			<a class="carousel-item" ><img src="{% static 'images/carou3.jpg' %}" style="width:200px;height:200px;"> </a>
+			<a class="carousel-item" ><img src="{% static 'images/carou4.jpg' %}" style="width:200px;height:200px;"></a>
+			<a class="carousel-item" ><img src="{% static 'images/carou5.jpg' %}" style="width:200px;height:200px;"></a>
+			<a class="carousel-item" ><img src="{% static 'images/carou6.jpg' %}" style="width:200px;height:200px;"></a>
+		</div>
+
+     <ul class="sidenav" id="menu-responsive">
+          <li><a href="#">enlace</a></li>
+		<li><a href="#">Enlace</a></li>
+		<li><a href="#">Enlace</a></li>
+		</ul>
+		
+      <div="container section">
+	      <!--Codigo carrusel -->
+     <div class="carousel carousel-slider center">
+    <div href="{% static 'images/screen1.jpg' %}" class="carousel-item white-text">
+    
+    </div>
+    <div class="carousel-item cc2 white-text"> <a class="waves-light waves-light btn" href="link2.html">ver </a> 
+    </div>
+    <div class="carousel-item cc3 white-text"> <a class="waves-light waves-light btn" href="link1.html">ver </a>
+    </div>
+    <div class="carousel-item cc4 white-text"> <a class="waves-light waves-light btn" href="link1.html">ver </a> </div>
+  </div>
+		  
+		  
+		    </div>
+		  </div>
+	  </div>
+	  
+     
+
+    <div class="row">
+    <div class="col s12 m7">
+	  <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" src="{% static 'images/cafebluemountain.jpg' %}">
+          <span class="Cafe Blue Mountain">Cafe Blue Mountain</span>
+        </div>
+        <div class="card-content">
+          <p>Un café muy fino, aromático y con muy poca acidez que hace que sea un café adorado en todo el globo.
+		  <br></br>
+Su sabor afrutado, cuerpo achocolatado y un sinfín de matices que concentran todo el sabor del Caribe en una taza de café.
+<br>
+Su precio es de $19.990 los 306gr.
+</br> </p>
+        </div>
+        <div class="card-action">
+          <a href="http://www.eboca.com/ebocame/jamaica-blue-mountain-el-mejor-cafe-del-mundo/">Link para más información</a>
+        </div>
+		</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m7">
+	  <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" src="{% static 'images/cafebluemountain.jpg' %}">
+          <span class="Cafe Biohazard">Cafe Biohazard</span>
+        </div>
+        <div class="card-content">
+          <p>Cafe realmente exótico, el cúal se exporta de Japón y tiene un saber espectacular, un poco acido, bastante amargo y con un sabor de otra planeta.
+		  <br>
+		  Su precio es de $24.990 los 400gr.
+		  </br>
+		  </p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.biohazardcoffee.com">Link para más información</a>
+        </div>
+		</div>
+      </div>
+    </div>
+  </div>
+  
+   <div class="row">
+    <div class="col s12 m7">
+	  <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" src="{% static 'images/Cafe moka yemen.jpg' %}">
+          <span class="Cafe Moka Yemen">Cafe Moka Yemen</span>
+        </div>
+        <div class="card-content">
+          <p>Cultivado tradicionalmente sin productos químicos (por ejemplo, orgánico) en Yemen, el Café Moka es un café silvestre, procesado en seco (natural), por lo general con mucho cuerpo y una rica acidez vínica.
+<br><br>
+ El café procesado en seco y más bien silvestre con un cuerpo lleno, acidez de vino y profundos tonos terrosos. La fruta almizclada da paso a un maravilloso final chocolatado. Se trata de un café vivo con notas especiadas de cardamomo y canela, así como frutos secos como pasas y agradables notas especiadas dulces
+</br>
+Su precio es de $39.990 los 356gr.
+</br> </p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.lajoyadelcafe.com/cafe-moka/">Link para más información</a>
+        </div>
+		</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m7">
+	  <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" src="{% static 'images/Cafe Peaberry.jpg' %}">
+          <span class="Cafe Peaberry">Cafe Peaberry</span>
+        </div>
+        <div class="card-content">
+          <p> El café Peaberry de Tanzania tiene un cuerpo medio y una acidez brillante, incluso penetrante, con tonos frutales. El sabor profundo y rico puede exhibir notas de grosellas negras que se suavizan en chocolate y se mezclan en el postgusto dulce y profundo.
+		  <br></br>
+
+A menudo comparado con el café de Kenia, el café de Tanzania es vibrante, con una marcada acidez picante y vitivinícola y un rico sabor. El cuerpo es medio a lleno y busca notas de cedro en los sabores de bayas dulces y frutales y notas rústicas en el aroma seguido de un postgusto persistente.
+<br></br>
+Su precio es de $34.990 los 600gr.
+</br> </p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.lajoyadelcafe.com/peaberry/">Link para más información</a>
+        </div>
+		</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s12 m7">
+	  <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" src="{% static 'images/Cafe Mendheling.jpg' %}">
+          <span class="Cafe Mandheling">Cafe Mandheling</span>
+        </div>
+        <div class="card-content">
+          <p> Cultivado en la isla indonesia de Sumatra, Mandheling es conocido tanto por su cuerpo suave y completo (sensación en la boca) como por su rico y complejo sabor. Las notas de cata de Sumatra Mandheling a menudo lo describen como terroso e intenso con un aroma herbal, único en la región y que no se encuentra en los cafés sudamericanos o africanos.
+		  <br></br>
+
+Con la acidez suficiente para proporcionar una vitalidad, Mandheling café a menudo muestra tonos de chocolate dulce y regaliz. El sabor del café se desarrolla bien debido a la rica tierra volcánica y el clima tropical, a pesar de no ser de gran altura..
+<br></br>
+Su precio es de $49.990 los 680gr.
+</br> </p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.lajoyadelcafe.com/sumatra-mandheling/">Link para más información</a>
+        </div>
+		</div>
+      </div>
+    </div>
+  </div>
+
+   <div class="row">
+    <div class="col s12 m7">
+	  <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" src="{% static 'images/cafe harrar.jpg' %}">
+          <span class="Cafe Harrar">Cafe Harrar</span>
+        </div>
+        <div class="card-content">
+          <p> El café Harrar etíope, de gran cuerpo, picante y fragante, es un café Arábica silvestre y exótico procesado en seco (natural) que se cultiva en pequeñas granjas de la región de Oromia (antes Harrar), en el sur de Etiopía, a una altitud de entre 1.400 y 2.000 metros. La provincia de Harrar se encuentra al este de Addis Abeba, la capital del país..
+		  <br></br>
+
+El café etíope Harrar es generalmente muy apreciado y conocido por su acidez vinosa y afrutada, de tonos florales – brillante en la taza, incluso intenso – y las notas de cata lo describen con un aroma rico y picante, embriagador que recuerda maravillosamente a las moras.
+<br></br>
+Su precio es de $29.990 los 480gr.
+</br> </p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.lajoyadelcafe.com/cafe-harrar/">Link para más información</a>
+        </div>
+		</div>
+      </div>
+    </div>
+  </div>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+	  
+	  
+	  
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+	</script>
+
+	<script>
+	
+	document.addEventListener('DOMContentLoaded, function(){
+	 M.autoInit();
+	});
+	</script>
+	<!-----carousel-------->
+	<Script>
+	 document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+	
+	</script>
+	
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js" ></script>
+
+		
+		<script>
+                $(document).ready(function(){
+                $('.carousel').carousel();
+                });
+
+         </script>
+	
+      <script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+    </body>
+  </html>
+        

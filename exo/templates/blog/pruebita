@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+       <div class="page-header">
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for usuario in jh %}
+    <div class="post">
+        <h2><a href="">{{ usuario.nombre }}</a></h2>
+        <h2><a href="">{{ usuario.contrasenia }}</a></h2>
+    </div>
+{% endfor %}
+    </body>
+</html>

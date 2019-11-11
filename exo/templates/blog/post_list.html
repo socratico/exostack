@@ -1,17 +1,9 @@
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-       <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-
-{% for usuario in jh %}
-    <div>
-        <h2><a href="">{{ usuario.nombre }}</a></h2>
-        <h2><a href="">{{ usuario.contrasenia }}</a></h2>
-    </div>
-{% endfor %}
-    </body>
-</html>
+{% extends 'blog/base.html' %}
+{% block asd %}
+    {% for usuario in jh %}
+        <div class="post">
+            <h2><a href="{% url 'detalle_usuario' pk=usuario.pk %}">{{ usuario.nombre }}</a></h2>
+            <h2><a href="">{{ usuario.contrasenia }}</a></h2>
+        </div>
+    {% endfor %}
+{% endblock %}
