@@ -43,13 +43,13 @@
                 <tbody>
                 {% for producto in productos %}
                     <tr>
-                    <td>{{ producto.pk }}</td>
-                    <td>{{ producto.nombre }}</td>
-                    <td>{{ producto.descripcion }}</td>
-                    <td>image</td>
-                    <td>{{ producto.valor }}</td>
-                    <td>{{ producto.cantidad }}</td>
-                    <td>
+                    <td border=3 height=100 width=300>{{ producto.pk }}</td>
+                    <td border=3 height=100 width=300>{{ producto.nombre }}</td>
+                    <td border=3 height=100 width=300>{{ producto.descripcion }}</td>
+                    <td ><img src="{{ producto.imagenes.url }}" border=3 height=100 width=300></td>
+                    <td border=3 height=100 width=300>{{ producto.valor }}</td>
+                    <td border=3 height=100 width=300>{{ producto.cantidad }}</td>
+                    <td border=3 height=100 width=300>
 
                         <a href="{% url 'crudeditar' pk=producto.pk%}" ><i
                             class="material-icons">create</i></a>

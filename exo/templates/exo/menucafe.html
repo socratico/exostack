@@ -89,7 +89,7 @@
         <div class="col s6">
             <div class="card">
                 <div class="card-image">
-                    <img class="responsive-img" src="{% static 'images/{{producto.imagenes}}' %}">
+                    <img class="responsive-img" src="{{ producto.imagenes.url }}">
                     <span class="Cafe Blue Mountain">{{ producto.nombre}}</span>
                 </div>
                 <div class="card-content">

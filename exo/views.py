@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Usuario, Productos
 from django.http import HttpResponseRedirect
+from django.core.files.storage import default_storage
 
 # Create your views here.
 
@@ -33,9 +34,11 @@ def crudcrear(request):
     producto.pk = request.POST.get("id")
     producto.nombre = request.POST.get("nombre")
     producto.descripcion = request.POST.get("descripcion")
-    producto.imagen = request.POST.get("imagen")
+    if request.FILES['imagen']:
+        producto.imagenes = request.FILES['imagen']
     producto.valor = request.POST.get("valor")
     producto.cantidad = request.POST.get("cantidad")
+
     producto.save()
 
     return HttpResponseRedirect('/ejemplocrud/')
@@ -57,10 +60,11 @@ def crudeditar(request, pk):
         producto = get_object_or_404(Productos, pk=pk)
         return render(request, 'exo/crudeditar.html', {"producto": producto})
     producto = Productos()
-
+    producto.pk = request.POST.get("id")
     producto.nombre = request.POST.get("nombre")
     producto.descripcion = request.POST.get("descripcion")
-    producto.imagen = request.POST.get("imagen")
+    if request.FILES['imagen']:
+        producto.imagenes = request.FILES['imagen']
     producto.valor = request.POST.get("valor")
     producto.cantidad = request.POST.get("cantidad")
     producto.save()

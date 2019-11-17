@@ -30,12 +30,12 @@
             </div>
      </nav>
 
-	<form method="post">
+	<form method="post" enctype="multipart/form-data">
         {% csrf_token %}
 
 				Nombre: <input  class="input-field col s6" name="nombre" type="text" placeholder="Nombre del producto"><br>
 				Descripción: <input  class="input-field col s6" name="descripcion" type="text" placeholder="Descripción del producto"><br>
-                Imagen: <input  class="input-field col s6" name="imagen" type="text" placeholder="Imagen del producto"><br>
+                Imagen: <input type="file" name="imagen" /><br>
 				Valor: <input type="number" name="valor" min = "0" placeholder="" ><br>
                 Cantidad: <input type="number" name="cantidad" min = "0" placeholder="" ><br>
 				<button type="submit" class="waves-effect waves-light btn">Ingresar producto</button>

@@ -35,7 +35,7 @@
                 Id: <input  class="input-field col s6" name="pk" type="text" readonly value="{{ producto.id }}" ><br>
 				Nombre: <input  class="input-field col s6" name="nombre" type="text" readonly value="{{ producto.nombre }}" ><br>
 				Descripción: <input  class="input-field col s6" name="descripcion" type="text" readonly value="{{ producto.descripcion }}" ><br>
-                Imagen: <input  class="input-field col s6" name="imagen" type="text" readonl yvalue="{{ producto.imagenes }}" ><br>
+                Imagen: <img  src="{{ producto.imagenes.url }}" border=3 height=100 width=300><br>
 				Valor: <input type="number" readonly name="valor" min = "0" value="{{ producto.valor }}" ><br>
                 Cantidad: <input type="number" readonly name="cantidad" min = "0" value="{{ producto.cantidad }}" ><br>
                 <button type="submit" class="waves-effect waves-light btn">Eliminar el producto</button>

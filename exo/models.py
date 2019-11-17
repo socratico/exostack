@@ -31,7 +31,7 @@ class Productos(models.Model):
     nombre = models.CharField(max_length=50)
     cantidad = models.IntegerField()
     descripcion = models.CharField(max_length=300)
-    imagenes = models.FileField(upload_to='documents/')
+    imagenes = models.ImageField(upload_to='documents', null=True)
 
     def crearProducto(self):
         self.save()
