@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link href="{% static 'css/ejemplocrud.css' %}" media="screen,projection" type="text/css" rel="stylesheet"/>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+</head>
+
+<body>
+<div class="row">
+    <div id="admin" class="col s7">
+        <div class="card material-table">
+            <div class="table-header">
+                <span class="table-title">Cafes Exostack</span>
+                <div class="actions">
+                    <a href="{% url 'crudcrear' %}" class="modal-trigger waves-effect btn-flat nopadding"><i
+                            class="material-icons">add_circle</i></a>
+                    <a href="#" class="search-toggle waves-effect btn-flat nopadding"><i
+                            class="material-icons">search</i></a>
+                </div>
+            </div>
+            <table id="datatable" class="centered">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Imagenes</th>
+                    <th>Valor</th>
+                    <th>Cantidad</th>
+                    <th>Acciones</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                {% for producto in productos %}
+                    <tr>
+                    <td>{{ producto.pk }}</td>
+                    <td>{{ producto.nombre }}</td>
+                    <td>{{ producto.descripcion }}</td>
+                    <td>image</td>
+                    <td>{{ producto.valor }}</td>
+                    <td>{{ producto.cantidad }}</td>
+                    <td>
+
+                        <a href="{% url 'crudeditar' pk=producto.pk%}" ><i
+                            class="material-icons">create</i></a>
+                            <a href="{% url 'crudeliminar' pk=producto.pk%}" ><i
+                            class="material-icons">cancel_presentation</i></a>
+
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="{% static 'js/ejemplocrud.js' %}"></script>
+</body>
+</html>
