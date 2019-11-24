@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link href="{% static 'css/materialize.css' %}" rel="stylesheet"
-          type="css/materialize.min./home/rodrigo/Escritorio/duoc/exo/static/imagescss" media="screen,projection"/>
-    <link href="{% static 'css/carousel.css' %}" type="text/css" href="carousel.css">
+          type="text/css" media="screen,projection"/>
+    <link href="{% static 'css/carousel.css' %}" type="text/css" >
     <!--Let browser know website is optimized for mobile-->
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,7 +17,7 @@
     <link rel="{% static 'css/style.css' %}"
           href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <link rel="stylesheet" type="text/css" href="estilocarou.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 </head>
@@ -29,7 +29,7 @@
     <div class="container">
 
         <a href="#" class="brand-logo">ExoStacks</a>
-        <a href="#" data target="menu-responsive" class="sidenav-trigger">
+        <a href="#" data-target="menu-responsive" class="sidenav-trigger">
             <i class=material-icons>menu</i>
             <ul class="right hide-on-med-and-down">
 
@@ -45,6 +45,12 @@
     </div>
 </nav>
 
+<ul class="sidenav" id="menu-responsive">
+    <li><a href="{% url 'index' %}">Inicio</a></li>
+    <li><a href="{% url 'login' %}">Login</a></li>
+    <li><a href="{% url 'registro' %}">Registro</a></li>
+</ul>
+
 
 <div class="carousel">
     <a class="carousel-item"><img src="{% static 'images/carou1.jpg' %}" style="width:200px;height:200px;"> </a>
@@ -55,11 +61,7 @@
     <a class="carousel-item"><img src="{% static 'images/carou6.jpg' %}" style="width:200px;height:200px;"></a>
 </div>
 
-<ul class="sidenav" id="menu-responsive">
-    <li><a href="#">enlace</a></li>
-    <li><a href="#">Enlace</a></li>
-    <li><a href="#">Enlace</a></li>
-</ul>
+
 
 <div class="container section">
 <!--Codigo carrusel -->
@@ -116,10 +118,10 @@
 
 <script>
 
-    document.addEventListener('DOMContentLoaded, function(){
-    M.autoInit();
-    })
-    ;
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
 </script>
 <!-----carousel-------->
 <Script>
@@ -129,7 +131,7 @@
 
 </script>
 
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 

@@ -2,240 +2,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Parallax Template - Materialize</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
+<nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Log-in</a></li>
-      </ul>
+        <a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Log-in</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Log In</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Log In</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
+</nav>
 
-  <div id="index-banner" class="parallax-container">
+<div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">ExoStack</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Prueba los mejores cafes exóticos en ExoStack</h5>
-        </div>
-        <div class="row center">
-          <a href="{% url 'menu_cafe' %}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Productos</a>
-        </div>
-        <br><br>
+        <div class="container">
+            <br><br>
+            <h1 class="header center teal-text text-lighten-2">ExoStack</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Prueba los mejores cafes exóticos en ExoStack</h5>
+            </div>
+            <div class="row center">
+                <a href="{% url 'menu_cafe' %}" id="download-button"
+                   class="btn-large waves-effect waves-light teal lighten-1">Productos</a>
+            </div>
+            <br><br>
 
-      </div>
+        </div>
     </div>
     <div class="parallax"><img src="{% static 'images/screen1.jpg' %}" alt="Unsplashed background img 1"></div>
-  </div>
+</div>
 
 
-  <div class="container">
+<div class="container">
     <div class="section">
 
-      <!--  Seccion de los iconos:Son descargable desde Materialize  -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">filter_hdr</i></h2>
-            <h5 class="center">Consigue productos exclusivos y de alta calidad</h5>
+        <!--  Seccion de los iconos:Son descargable desde Materialize  -->
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">filter_hdr</i></h2>
+                    <h5 class="center">Consigue productos exclusivos y de alta calidad</h5>
 
-            <p class="light">Nuestros productos son totalmente exclusivos y de alta calidad, buscamos entregar más que un producto, un producto bueno y que deje satisfecho al cliente.</p>
-          </div>
+                    <p class="light">Nuestros productos son totalmente exclusivos y de alta calidad, buscamos entregar
+                        más que un producto, un producto bueno y que deje satisfecho al cliente.</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Como trabajamos</h5>
+
+                    <p class="light">Somos una pequeña empresa, la cúal trabaja con distintos distribuidores exóticos de
+                        cafe. Nuestras variedades de cafes provienen de distintos lugares del mundo, tales como: India,
+                        Colombia, Turquia, Jamaica, Africa, China y entre otros. </p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">flag</i></h2>
+                    <h5 class="center">Nuestros logros </h5>
+
+                    <p class="light">Llegamos a la meta de 1.000.000 productos vendidos, más de 100 tiendas en todo el
+                        mundo y vamos por más.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Como trabajamos</h5>
-
-            <p class="light">Somos una pequeña empresa, la cúal trabaja con distintos distribuidores exóticos de cafe. Nuestras variedades de cafes provienen de distintos lugares del mundo, tales como: India, Colombia, Turquia, Jamaica, Africa, China y entre otros. </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flag</i></h2>
-            <h5 class="center">Nuestros logros </h5>
-
-            <p class="light">Llegamos a la meta de 1.000.000 productos vendidos, más de 100 tiendas en todo el mundo y vamos por más.</p>
-          </div>
-        </div>
-      </div>
 
     </div>
-  </div>
+</div>
 
 
-  <div class="parallax-container valign-wrapper">
+<div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Más de 100 marcas alrededor del mundo a un solo click</h5>
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">Más de 100 marcas alrededor del mundo a un solo click</h5>
+            </div>
         </div>
-      </div>
     </div>
     <div class="parallax"><img src="{% static 'images/screen2.jpg' %}" alt="Unsplashed background img 2"></div>
-  </div>
+</div>
 
-  <div class="container">
+<div class="container">
     <div class="section">
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contactenos</h4>
-          <p class="left-align light">Emails de contactos:
-		  <br>
-		  ignaciocafes99@gmail.com
-		  <br>
-		  pedrocafes98@gmail.com
-		  <br><br>
-		  Telefonos de contacto:
-		  <br>
-		  22 858 7722
-		  <br>
-		  22 765 4321</p>
+        <div class="row">
+            <div class="col s12 center">
+                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h4>Contactenos</h4>
+                <p class="left-align light">Emails de contactos:
+                    <br>
+                    ignaciocafes99@gmail.com
+                    <br>
+                    pedrocafes98@gmail.com
+                    <br><br>
+                    Telefonos de contacto:
+                    <br>
+                    22 858 7722
+                    <br>
+                    22 765 4321</p>
+            </div>
         </div>
-      </div>
 
     </div>
-  </div>
+</div>
 
 
-  <div class="parallax-container valign-wrapper">
+<div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">El café es un bálsamo para el corazón y el espíritu.
-		  <br>
-			Giuseppe Verdi</h5>
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">El café es un bálsamo para el corazón y el espíritu.
+                    <br>
+                    Giuseppe Verdi</h5>
+            </div>
         </div>
-      </div>
     </div>
     <div class="parallax"><img src="{% static 'images/background3.jpg' %}" alt="Unsplashed background img 3"></div>
-  </div>
+</div>
 
-  <footer class="page-footer teal">
+<footer class="page-footer teal">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text"></h5>
-          <p class="grey-text text-lighten-4"></p>
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text"></h5>
+                <p class="grey-text text-lighten-4"></p>
 
 
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text"></h5>
+                <ul>
+                    <li><a class="white-text" href="#!"> </a></li>
+                    <li><a class="white-text" href="#!"> </a></li>
+                    <li><a class="white-text" href="#!"> </a></li>
+                    <li><a class="white-text" href="#!"> </a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text"></h5>
+
+            </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text"></h5>
-          <ul>
-            <li><a class="white-text" href="#!"> </a></li>
-            <li><a class="white-text" href="#!"> </a></li>
-            <li><a class="white-text" href="#!"> </a></li>
-            <li><a class="white-text" href="#!"> </a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text"></h5>
-          
-        </div>
-      </div>
     </div>
-    
-    </div>
-  </footer>
-  
-  <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Mision</h4>
-          <p class="left-align light">
-		  <br><br>
-		  Como Mision esencial de ExoStack es mantener los estandares altos en calidad de nuestros productos. Tambien como empresa buscamos satisfacer las necesidades de nuestros clientes, siendo eficientes y estando liderando con el bajo precio de nuestros productos.
-		  Como mision final de ExoStack es llevar el cafe exotico a cada rincon del mundo, para que nuestros clientes no se pierdan lo mejor en sabor y calidad.
-		  </p>
-        </div>
-      </div>
 
     </div>
-  </div>
-  
-  <div class="parallax-container valign-wrapper">
+</footer>
+
+<div class="row">
+    <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Mision</h4>
+        <p class="left-align light">
+            <br><br>
+            Como Mision esencial de ExoStack es mantener los estandares altos en calidad de nuestros productos. Tambien
+            como empresa buscamos satisfacer las necesidades de nuestros clientes, siendo eficientes y estando liderando
+            con el bajo precio de nuestros productos.
+            Como mision final de ExoStack es llevar el cafe exotico a cada rincon del mundo, para que nuestros clientes
+            no se pierdan lo mejor en sabor y calidad.
+        </p>
+    </div>
+</div>
+
+</div>
+</div>
+
+<div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">
-		  <br>
-			</h5>
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">
+                    <br>
+                </h5>
+            </div>
         </div>
-      </div>
     </div>
     <div class="parallax"><img src="{% static 'images/background3.jpg' %}" alt="Unsplashed background img 1"></div>
-  </div>
-  
-   <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Vision</h4>
-          <p class="left-align light">
-		  <br><br>
-		  Como Vision principal en ExoStack es mantener la calidad y los estandares de nuestros productos, llevarlos a todo el mundo y ser reconocidos como un exponente en materia cafes exoticos. 
-		  </p>
-        </div>
-      </div>
+</div>
 
+<div class="row">
+    <div class="col s12 center">
+        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h4>Vision</h4>
+        <p class="left-align light">
+            <br><br>
+            Como Vision principal en ExoStack es mantener la calidad y los estandares de nuestros productos, llevarlos a
+            todo el mundo y ser reconocidos como un exponente en materia cafes exoticos.
+        </p>
     </div>
-  </div>
-  
-  <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
+</div>
+
+</div>
+</div>
+
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="card-panel grey lighten-5 z-depth-1">
+        <div class="row valign-wrapper">
             <div class="col s2">
-              <img src="{% static 'images/pepec.jpeg' %}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                <img src="{% static 'images/pepec.jpeg' %}" alt="" class="circle responsive-img">
+                <!-- notice the "circle" class -->
             </div>
             <div class="col s10">
               <span class="black-text">
                 Pedro, Programador estrella de ExoStack.
               </span>
             </div>
-          </div>
         </div>
-      </div>
-	  
-	  <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
+    </div>
+</div>
+
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="card-panel grey lighten-5 z-depth-1">
+        <div class="row valign-wrapper">
             <div class="col s2">
-              <img src="{% static 'images/nachoc.jpeg' %}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                <img src="{% static 'images/nachoc.jpeg' %}" alt="" class="circle responsive-img">
+                <!-- notice the "circle" class -->
             </div>
             <div class="col s10">
               <span class="black-text">
                 Ignacio, Programador estrella de la Nasa y ExoStack.
               </span>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="{% static 'js/materialize.js' %}"></script>
-  <script src="{% static 'js/init.js' %}"></script>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="{% static 'js/materialize.js' %}"></script>
+<script src="{% static 'js/init.js' %}"></script>
 
-  </body>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('{% static 'js/sw.js' %}')
+            .then(function () {
+                console.log("Service Worker Registered");
+            });
+    }
+</script>
+
+</body>
 </html>

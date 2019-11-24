@@ -13,11 +13,11 @@ footer{
     text-align:center;
 }
 .cc1{
-    background-image: url('screen1.jpg');
+    background-image: url('../../templates/exo/screen1.jpg');
 }
 
 .cc2{
-    background-image: url('screen2.jpg');
+    background-image: url('../../templates/exo/screen2.jpg');
 }
 .cc3{
     background-image: url('screen3.jpg');

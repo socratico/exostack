@@ -37,7 +37,6 @@ div.material-table .table-header {
 
 div.material-table .table-header .actions {
   display: -webkit-flex;
-  margin-left: auto;
 }
 
 div.material-table .table-header .btn-flat {
