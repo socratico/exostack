@@ -83,7 +83,6 @@ def login(request):
     print("PWD: "+contrasena)
     print("----")
     usuario = Usuario.objects.filter(nombre=nombre)
-    print(usuario[0].contrasenia)
     if len(usuario) == 0 or usuario[0].contrasenia != contrasena:
         return render(request, 'exo/login.html', {"msg": "Error al iniciar sesión"})
     else:
